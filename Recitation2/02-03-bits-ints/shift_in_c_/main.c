@@ -16,18 +16,13 @@
      int aval=val>>36;
      unsigned int uval=0xFEDCBA98u>>40;
  
-     //printf("0xFEDCBA98<<32=%x,%d\n",lval,lval);
- 
-     int i=-2;
-     for(;i<=100;i++){
-         printf("%d\t",i);
-         hextobin(i);
-         printf("\n");
-     }
- 
-     //printf("0xFEDCBA98>>3632=%x,%d/t",aval,aval); 
-     //printf("0xFEDCBA98>>40=%x,%u/t",uval,uval); 
-     return 0;
+     printf("0xFEDCBA98<<32=%x,%d\t",lval,lval);
+     hextobin(lval);printf("\n");
+     printf("0xFEDCBA98>>36=%x,%d\t",aval,aval); 
+     hextobin(aval);    printf("\n");
+     printf("0xFEDCBA98>>40=%x,%u\t",uval,uval); 
+     hextobin(uval); printf("\n");
+ return 0;
  }
  void
  hextobin(unsigned int hex)
